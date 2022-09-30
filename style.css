@@ -1,0 +1,141 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+}
+body {
+    font-size: 1.6rem;
+    color: white;
+    background-image: url(./assets/fondo.jpg);
+    background-position: center;
+}
+header{
+    position: fixed;
+    width: 100vw;
+    height: 54px;
+    padding: 0 3rem 0 1rem;
+    background-color: #000;
+    z-index: 100;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav p {
+    font-size: 4rem;
+}
+header a {
+    color: #000;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    transition: all 0.6s;
+    font-size: 2.5rem;
+}
+header a:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* MAIN */
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding-top: 5.4rem;
+}
+aside{
+    min-width: 24rem;
+    height: 100%;
+    display: inline-block;
+    background: #00000077;
+}
+.asideContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.asideContainer__item {
+    padding: 2rem;
+}
+.asideContainer img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    filter: brightness(.4);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+.figcaption1 {
+    position: absolute;
+    top: 16rem;
+    font-size: 4rem;
+    left: 3rem;
+    transition: all .5s;
+}
+.figcaption2 {
+    position: absolute;
+    top: 36rem;
+    font-size: 3rem;
+    left: 4.2rem;
+}
+.figcaption3 {
+    position: absolute;
+    top: 54.5rem;
+    font-size: 2rem;
+    left: 3rem;
+    line-height: 1;
+}
+.figcaption4 {
+    position: absolute;
+    top: 72rem;
+    font-size: 3.5rem;
+    left: 3rem;
+}
+.notas {
+    display: inline-block;
+    overflow-y: scroll;
+    background: #00000077;
+    border-left: 1px solid #ffffff66;
+    padding: 1rem;
+}
+.notas > section {
+    border-bottom: 1px solid #ffffff66;
+}
+.notas section > h2 {
+    text-align: center;
+}
+.notas section p {
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    display: block;
+    width: 100vw;
+    height: 4rem;
+    background: #00000077;
+    border-top: 1px solid #ffffff66;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer div p {
+    letter-spacing: 1px;
+}
